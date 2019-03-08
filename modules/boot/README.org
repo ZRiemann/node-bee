@@ -17,3 +17,27 @@
       应用数据配置,结合具体模块
     - devices   ; 设备模块集合
       应用模块,继承Device;
+* test ditaa
+#+BEGIN_SRC ditaa
+
+
+  ..............             +-------------+
+              ..             |             |
+              ........       |  good       |
+                             +-------------+
+#+END_SRC
+#+BEGIN_SRC html
+<h1>hello world!<h1>
+#+END_SRC
+#+BEGIN_SRC js
+let log='abc';
+console.log(log);
+#+END_SRC
+#+BEGIN_SRC c
+#include <stdio.h>
+
+int main(int argc, char **argv){
+        printf("hello world!");
+        return 0;
+}
+#+END_SRC
