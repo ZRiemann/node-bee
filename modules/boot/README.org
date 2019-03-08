@@ -1,0 +1,19 @@
+* boot overview
+  模块化设计,用户只需要设计相应的模块,和做相应的配置即可完成应用服务;
+* 对比传统思路
+  - 传统
+    增加\删除模块,需要多处手动编码框架,容易出错;
+  - boot
+    使用统一的device tree, 唯一的 boot.json 配置;一次编码\一次配置即可完成;
+* 目录结构
+  - boot
+    - boot.js   ; 启动框架, ./boot.js
+      加载 boot.json;
+      加载 devices 模块;
+      运行模块;
+      等待退出;
+    - device.js ; 设备类
+    - boot.json ; 框架配置
+      应用数据配置,结合具体模块
+    - devices   ; 设备模块集合
+      应用模块,继承Device;

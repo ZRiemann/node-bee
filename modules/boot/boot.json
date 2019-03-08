@@ -1,0 +1,9 @@
+{
+    devices:[
+        "dev1",
+        "dev2"
+    ],
+    boot-tree:{
+        "name": "boot"
+    }
+}
