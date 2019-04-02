@@ -10,13 +10,14 @@ setTimeout(function(){
 
 setTimeout(function(){
     let j = 0;
-    for(let i = 0; i < 1000; i++){
+    for(let i = 0; i < 2; i++){
         j = `msg[${i}]`;
         logBee.dbg(j);
         rabbit.sendToQueue(j);
     }
 }, 600);
-
+/*
 setTimeout(function(){
     rabbit.close();
 }, 30000);
+*/

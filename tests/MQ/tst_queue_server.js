@@ -11,7 +11,8 @@ setTimeout(function(){
 setTimeout(function(){
     rabbit.consume(function(msg){
         logBee.dbg(msg);
-    });
+    }, {noAck: true,
+        consumerTag: "consumerTag.queue-test.1"});
 }, 600);
 
 setTimeout(function(){

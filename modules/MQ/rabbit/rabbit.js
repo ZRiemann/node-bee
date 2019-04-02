@@ -17,7 +17,7 @@ Rabbit.prototype.connect = function(url = 'amqp://localhost', cb = function(err)
             cb(connerr);
         }else{
             that.conn = conn;
-            logBee.dbg(`connect to ${url} OK.`);
+            logBee.dbg(`connect to ${url} OK. ${conn.connection.stream.localAddress}:${conn.connection.stream.localPort}`);
             conn.createChannel(function(cherr, ch){
                 if(cherr){
                     logBee.dumpError(cberr);
